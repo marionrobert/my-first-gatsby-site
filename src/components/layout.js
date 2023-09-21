@@ -7,7 +7,11 @@ import { container,
   navLinkText} from "./layout.module.css"
 
 
-const Layout = ({pageTitle, pageHeading, children}) => {
+const Layout = (props) => {
+  const pageTitle = props.pageTitle
+  const pageHeading = props.pageHeading
+  const children = props.children
+
   return (
     <main className={container}>
       <title>{pageTitle}</title>
