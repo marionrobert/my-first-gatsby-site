@@ -25,7 +25,7 @@ const Layout = (props) => {
       }
     `
   )
-  console.log(data)
+  console.log("data from layout component", data)
 
   return (
     <div className={container}>
